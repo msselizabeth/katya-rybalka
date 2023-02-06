@@ -1,0 +1,119 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: wheat;
+}
+
+.hero-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1421px;
+  height: 650px;
+}
+
+.hero-title {
+  margin-left: 550px;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero {
+  position: relative;
+  padding-top: 5px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1420px;
+  height: 645px;
+  background-image: url("../images/HERO.JPG");
+  background-repeat: no-repeat;
+  background-size: 1420px 645px;
+}
+
+.links-box {
+  margin-top: 525px;
+  display: flex;
+  align-items: center;
+}
+
+.smr-link {
+  margin-left: 750px;
+  color: white;
+  text-align: center;
+}
+.smr-link:hover {
+  color: black;
+}
+
+.social-list--item_icon {
+  width: 16px;
+  height: 16px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 130px;
+}
+
+.social-list--item__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  fill: white;
+}
+.social-list--item__link:hover {
+  border-color: black;
+  fill: black;
+}
+
+.social-list--item__link-youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 70px;
+  border: 2px solid white;
+  border-radius: 6px;
+  fill: white;
+}
+.social-list--item__link-youtube:hover {
+  border-color: black;
+  fill: black;
+}
+
+.social-list--item_icon-youtube {
+  width: 60px;
+}/*# sourceMappingURL=index.css.map */
