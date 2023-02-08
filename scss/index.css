@@ -6,6 +6,7 @@
 
 img {
   display: block;
+  width: 100%;
 }
 
 .link {
@@ -13,28 +14,34 @@ img {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.section {
-  max-width: 1250px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: wheat;
+@media screen and (min-width: 320px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
-.hero-img {
-  display: block;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.section {
   margin-left: auto;
   margin-right: auto;
-  width: 1421px;
-  height: 650px;
 }
 
 .hero-title {
-  margin-left: 550px;
+  margin-left: 5px;
 }
 
 header {
@@ -48,30 +55,39 @@ header {
   position: relative;
   padding-top: 5px;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1420px;
-  height: 645px;
-  background-image: url("../images/HERO.JPG");
-  background-repeat: no-repeat;
-  background-size: 1420px 645px;
+  width: 100%;
 }
 
-.links-box {
-  margin-top: 525px;
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(112, 112, 113, 0.126), rgba(112, 112, 113, 0.126)), url("../images/HERO.JPG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    min-height: 100px;
+  }
 }
-
-.smr-link {
-  margin-left: 750px;
-  color: white;
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(112, 112, 113, 0.126), rgba(112, 112, 113, 0.126)), url("../images/HERO.JPG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 345px;
+  }
+  .links-box {
+    margin-top: 525px;
+    display: flex;
+    align-items: center;
+  }
+  .smr-link {
+    margin-left: 750px;
+    color: white;
+    text-align: center;
+  }
+  .smr-link:hover {
+    color: black;
+  }
 }
-.smr-link:hover {
-  color: black;
-}
-
 .social-list--item_icon {
   width: 16px;
   height: 16px;
