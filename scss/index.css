@@ -65,8 +65,8 @@ img {
 .section {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -155,15 +155,6 @@ header {
 .social-list--item__link-youtube:hover, .social-list--item__link-youtube:focus {
   border-color: #3e3c3d;
   fill: #3e3c3d;
-}
-
-.smr-link {
-  display: block;
-  color: white;
-  text-align: center;
-}
-.smr-link:hover {
-  color: black;
 }
 
 @media screen and (max-width: 320px) {
