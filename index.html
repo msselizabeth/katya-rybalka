@@ -7,19 +7,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>КАТЯ РИБАЛКА</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./scss/index.css">
 </head>
 <body>
     <!--Header-->
-    <header class="header"></header>
+    <header class="header">
+       <div class="header-box container">
+        <a class="logo" href="#">
+            <svg class="logo-icon">
+                <use href="./images/icons.svg#icon-logo">
+                </use>
+            </svg></a>
+          <!-- <ul class="header-list list">
+            <li class="header-list__item item">
+             <a class="header-list__link link" href="#about">Про мене</a>
+            </li>
+            <li class="header-list__item item">
+             <a class="header-list__link link" href="#">Мої трофеї</a>
+            </li>
+            <li class="header-list__item item">
+             <a class="header-list__link link" href="#">Моя сімʼя</a>
+            </li>
+            <li class="header-list__item item">
+             <a class="header-list__link link" href="#">Підписатися</a>
+            </li>
+          </ul> -->
+      </div>
+    </header>
     <!--Main content-->
     <main>
         <!--Hero-->
-        <section class="hero section">
+        <section class="hero">
             <div class="hero-box container">
-                <h1 class="hero-title">Катя Рибалка</h1>
+                <h1 class="hero-title visually-hidden">Катя Рибалка</h1>
                <div class="links-box">
                 <ul class="social-list list">
                     <li class="social-list--item">
@@ -47,14 +72,14 @@
                             </svg></a>
                     </li>
                 </ul>
-                <a class=" smr-link link" href="https://smryb.com.ua/" target=_blank>
-                    Супермаркет <br> РИБАЛКА</a>
+                <!-- <a class=" smr-link link" href="https://smryb.com.ua/" target=_blank>
+                    Супермаркет <br> РИБАЛКА</a> -->
                </div>
             </div>
             <!-- <img class="hero-img" src="./images/HERO.JPG" alt=""> -->
         </section>
         <!--About me-->
-        <section class="about section">
+        <section class="about section" id="about">
             <div class="container">
                 <p>This is next section ABOUT YOU</p>
             </div>
