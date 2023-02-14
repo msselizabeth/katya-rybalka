@@ -382,4 +382,45 @@ header {
     width: 555px;
     height: 390px;
   }
+}
+.fishes__list--item-img {
+  width: 100%;
+}
+
+.fishes__title {
+  margin-bottom: 10px;
+  color: var(--color-titels);
+  font-size: 16px;
+}
+
+.fishes__list--item-title {
+  text-align: center;
+  font-size: 15px;
+}
+
+.fishes__list--item--text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.fishes__list--item-container {
+  padding: 10px;
+  border: 1px solid var(--color-titels);
+  border-top: 0;
+}
+
+.fishes__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fishes__list--item--link {
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  color: #25a1fa;
+}
+.fishes__list--item--link:hover {
+  color: #1768a2;
 }/*# sourceMappingURL=index.css.map */
