@@ -315,7 +315,7 @@ header {
 .about__title {
   margin-bottom: 10px;
   color: var(--color-titels);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .about__text--link {
@@ -326,7 +326,12 @@ header {
 }
 
 .about__text {
-  font-size: 16px;
+  font-size: 15px;
+}
+
+.about__text--part-2 {
+  display: block;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 767px) {
@@ -343,7 +348,7 @@ header {
     margin-bottom: 20px;
   }
   .about__text {
-    line-height: 1.4;
+    line-height: 1.1;
     width: 355px;
     height: 270px;
   }
