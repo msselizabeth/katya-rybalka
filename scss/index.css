@@ -326,7 +326,7 @@ header {
 }
 
 .about__text {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 767px) {
@@ -366,7 +366,7 @@ header {
     width: 555px;
     height: 390px;
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 20px;
   }
   .about__list {
     display: flex;
