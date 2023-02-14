@@ -1,9 +1,29 @@
+:root {
+  --color-primary: #3e3c3d;
+  --color-titels: #868585;
+  --color-icons: #f1e8ca;
+  --color-icons-active: #3e3c3d;
+  --color-icons-section: #afb1b8;
+  --color-icons-footer: #ffffff;
+  --background-color-primary: #fff;
+  --font-family-primary: "Noto Sans", sans-serif;
+  --font-family-header: "Lobster", sans-serif;
+}
+
 body {
   font-family: var(--font-family-primary);
   color: var(--color-primary);
   background-color: var(--background-color-primary);
   font-weight: 400;
   font-size: 16px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 .list {
@@ -14,7 +34,6 @@ body {
 
 img {
   display: block;
-  width: 100%;
 }
 
 .link {
@@ -71,8 +90,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 .hero-title {
@@ -291,5 +310,71 @@ header {
     width: 80px;
     height: 40px;
     border-radius: 10px;
+  }
+}
+.about__title {
+  margin-bottom: 10px;
+  color: var(--color-titels);
+  font-size: 16px;
+}
+
+.about__text--link {
+  color: #25a1fa;
+}
+.about__text--link:hover {
+  color: #1768a2;
+}
+
+.about__text {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .about__item--img {
+    width: 100%;
+  }
+  .about__item {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .about__text {
+    line-height: 1.4;
+    width: 355px;
+    height: 270px;
+  }
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .about__item--img {
+    width: 355px;
+    height: 280px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__title {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .about__text {
+    width: 555px;
+    height: 390px;
+    line-height: 1.5;
+    font-size: 18px;
+  }
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .about__item--img {
+    width: 555px;
+    height: 390px;
   }
 }/*# sourceMappingURL=index.css.map */
