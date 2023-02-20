@@ -1,17 +1,9 @@
-
+// Mobile and Global Version
 .fishes__list--item-img {
     width: 100%;
-    
 }
 
-.fishes__title {
-    margin-bottom: 10px;
-    color: var(--color-titels);
-    
-    font-size: 16px;
-}
 .fishes__list--item-title {
-   
     text-align: center;
     font-size: 15px;
 }
@@ -33,6 +25,14 @@
     flex-direction: column;
     gap: 20px;
 }
+.fishes__list--item:hover {
+    box-shadow: 2px 2px 5px var(--color-icons-active);
+    
+}
+.fishes__list--item:hover .fishes__list--item-container {
+    border: 0;
+}
+
 .fishes__list--item--link{
     display: block;
     margin-top: 12px;
@@ -43,6 +43,35 @@
             color: #1768a2;
         }
 }
+
+// Tablet Version
+@media screen and (min-width:768px) {
+    .fishes__list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .fishes__list--item{
+        width: 359px;
+    }
+   .fishes__list--item-img{
+    height: 315px;
+   }
+}
+
+// Desktop Version
+@media screen and (min-width:1200px) {
+   .fishes__list{
+    gap:20px;
+
+   }
+   .fishes__list--item {
+    width: 365px;
+         }
+
+}
+
 
 // .fishes__list--item-container{
 //     display: flex;

@@ -1,11 +1,4 @@
 
-.about__title{
-    margin-bottom: 10px;
-    color: var(--color-titels);
-
-    font-size: 14px;
-}
-
 .about__text--link {
     color: #25a1fa;
     &:hover{
@@ -34,37 +27,28 @@
 }
 
 @media screen and (min-width:768px) and (max-width:1199px) {
-    
-    .about__title {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
 
     .about__text {
 
         line-height: 1.1;
-        width: 355px;
+        width: 359px;
         height: 270px;
     }
 
     .about__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px;
        
     }
 
     .about__item--img {
-        width: 355px;
+        width: 359px;
         height: 280px;
     }
 }
 
 @media screen and (min-width:1200px) {
-    .about__title {
-            font-size: 25px;
-            margin-bottom: 30px;
-        }
     
         .about__text {
             width: 555px;

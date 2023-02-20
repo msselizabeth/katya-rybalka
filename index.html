@@ -7,9 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
     <title>КАТЯ РИБАЛКА</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./scss/index.css">
@@ -20,7 +18,7 @@
        <div class="header-box container">
         <a class="logo" href="#">
             <svg class="logo-icon">
-                <use href="./images/icons.svg#icon-logo">
+                <use href="./images/icons/icons.svg#icon-logo">
                 </use>
             </svg></a>
           <!-- <ul class="header-list list">
@@ -50,25 +48,25 @@
                     <li class="social-list--item">
                         <a class="social-list--item__link link" href="https://t.me/katyarybalkachannel" target=_blank>
                             <svg class="social-list--item_icon">
-                                <use href="./images/icons.svg#icon-telegram"></use>
+                                <use href="./images/icons/icons.svg#icon-telegram"></use>
                             </svg></a>
                     </li>
                     <li class="social-list--item">
                         <a class="social-list--item__link link" href="https://www.facebook.com/rybalkakatya" target=_blank>
                             <svg class="social-list--item_icon">
-                                <use href="./images/icons.svg#icon-facebook"></use>
+                                <use href="./images/icons/icons.svg#icon-facebook"></use>
                             </svg></a>
                     </li>
                     <li class="social-list--item">
                         <a class="social-list--item__link" href="https://www.tiktok.com/@katya_rybalka?_t=8ZejzITqFfh" target=_blank>
                             <svg class="social-list--item_icon">
-                                <use href="./images/icons.svg#icon-tiktok"></use>
+                                <use href="./images/icons/icons.svg#icon-tiktok"></use>
                             </svg></a>
                     </li>
                     <li class="social-list--item item">
                         <a class="social-list--item__link-youtube" href="https://youtube.com/@katyarybalka" target=_blank>
                             <svg class="social-list--item_icon-youtube">
-                                <use href="./images/icons.svg#icon-youtube"></use>
+                                <use href="./images/icons/icons.svg#icon-youtube"></use>
                             </svg></a>
                     </li>
                 </ul>
@@ -81,7 +79,7 @@
         <!--About me-->
         <section class="about section" id="about">
             <div class="container">
-                <h2 class="about__title">Про мене</h2>
+                <h2 class="about__title title">Про мене</h2>
                     <ul class="about__list list">
                         <li class="about__item item">
                         <p class="about__text">Катя Рибалка - це призвище чи псевдонім?
@@ -96,11 +94,34 @@
                             Переконайтесь самі - <a class="about__text--link link" href="https://youtube.com/@katyarybalka">Мій канал YouTube</a></span>
                         </p></li>
                         <li class="about__item item">
-                            <img class="about__item--img" src="./images/about-me-foto-1-2.jpg" alt="Фото Каті з великим товстолобом" ></li>
+                            <picture>
+                                <source srcset="./images/aboutme/about-me-foto-1-desktop.jpg"
+                                type="image/jpeg" media="(min-width:1200px)" />
+                                <source srcset="./images/aboutme/about-me-foto-1-tablet.jpg"
+                                type="image/jpeg" media="(min-width:768px)" />
+                                <source srcset="./images/aboutme/about-me-foto-1-mobile.jpg"
+                                type="image/jpeg" media="(max-width:767px)" />
+                            <img class="about__item--img" src="./images/aboutme/about-me-foto-1-mobile.jpg" 
+                            alt="Фото Каті з великим товстолобом"/></picture>
+                            </li>
                         <li class="about__item item">
-                            <img class="about__item--img" src="./images/about-me-foto-3-2.jpg" alt="Фото Каті з трофейним коропом" ></li>
+                            <picture>
+                            <source srcset="./images/aboutme/about-me-foto-2-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                            <source srcset="./images/aboutme/about-me-foto-2-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                            <source srcset="./images/aboutme/about-me-foto-2-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                            <img class="about__item--img" src="./images/about-me-foto-3-2.jpg" 
+                                 alt="Фото Каті з трофейним коропом"/>
+                            </picture>
+                        </li>
                         <li class="about__item item">
-                            <img class="about__item--img" src="./images/about-me-foto-4-2.jpg" alt="Фото Каті лежачи із багатьма рибами на короповомі маті" ></li>
+                            <picture>
+                            <source srcset="./images/aboutme/about-me-foto-3-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                            <source srcset="./images/aboutme/about-me-foto-3-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                            <source srcset="./images/aboutme/about-me-foto-3-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                            <img class="about__item--img" src="./images/about-me-foto-4-2.jpg"
+                                 alt="Фото Каті лежачи із багатьма рибами на короповомі маті"/>
+                            </picture>
+                        </li>
                     </ul>
             </div>
             
@@ -108,60 +129,207 @@
         <!--Fishes-->
         <section class="fishes section">
             <div class="container">
-                <h2 class="fishes__title">Трофеї</h2>
+                <h2 class="fishes__title title">Трофеї</h2>
                 <ul class="fishes__list list">
                     <li class="fishes__list--item">
-                        <img class="fishes__list--item-img" src="./images/pike-2.jpg" alt="">
+                        <picture>
+                            <source srcset="./images/fishes/pike-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                            <source srcset="./images/fishes/pike-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                            <source srcset="./images/fishes/pike-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                            <img class="fishes__list--item-img" src="./images/pike-2.jpg" alt="Катя із щукою в 13 кілограм 400 грам">
+                        </picture>
                         <div class="fishes__list--item-container">
                             <h3 class="fishes__list--item-title">Щука - 13,4 кг</h3>
-                            <p class="fishes__list--item--text">Черкаси, Кременчуцьке водосховище, 2021 рік</p>
-                            <a class="fishes__list--item--link link" href="https://youtu.be/vS92NlebBSE">ЩУКИ МОНСТРЫ СУЩЕСТВУЮТ!</a>
+                            <p class="fishes__list--item--text">Черкаси, Кременчуц. водосховище, 2021 рік</p>
+                            <a class="fishes__list--item--link link" href="https://youtu.be/vS92NlebBSE" target=_blank>ЩУКИ МОНСТРИ ІСНУЮТЬ!</a>
                         </div>
                     </li>
                     <li class="fishes__list--item item-reverse">
-                        <img class="fishes__list--item-img" src="./images/carp-2.jpg" alt="">
+                        <picture>
+                            <source srcset="./images/fishes/amur-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                            <source srcset="./images/fishes/amur-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                            <source srcset="./images/fishes/amur-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                            <img class="fishes__list--item-img" src="./images/amur-mobile.jpg" alt="Фото Каті з великим амуром вагою дванадцать с половиною кілограм">
+                        </picture>
                         <div class="fishes__list--item-container">
-                            <h3 class="fishes__list--item-title">Короп - 20,2 кг</h3>
-                            <p class="fishes__list--item--text">Київщина, озеро Ульяники, 2021 рік</p>
-                            <a class="fishes__list--item--link link" href="https://youtu.be/bFaczfaQG_Q">КАРПЫ МОНСТРЫ СУЩЕСТВУЮТ!</a>
+                            <h3 class="fishes__list--item-title">Білий Амур - 12,5 кг</h3>
+                            <p class="fishes__list--item--text">Донеччина, Мар’євське водосховище, 2020 рік</p>
+                            <a class="fishes__list--item--link link" href="https://youtu.be/JL06-dtobII" target=_blank>ОСІННІЙ ЖОР КОРОПА!</a>
                         </div>
                     </li>
-                    <!--<li class="fishes__list--item">
-                    <div class="fishes__list--item-container">
-                        <h3 class="fishes__list--item-title">Карась - 2,3 кг</h3>
-                        <p class="fishes__list--item--text">Київщина, озеро Вовкове, 2020 рік</p>
-                    </div>
-                        <img class="fishes__list--item-img" src="./images/karas.jpg" alt="">
-                    </li>
                     <li class="fishes__list--item item-reverse">
+                        <picture>
+                            <source srcset="./images/fishes/tolstolob-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                            <source srcset="./images/fishes/tolstolob-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                            <source srcset="./images/fishes/tolstolob-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                            <img class="fishes__list--item-img" src="./images/tolstolob-mobile.jpg" alt="">
+                        </picture>
                     <div class="fishes__list--item-container">
                         <h3 class="fishes__list--item-title">Товстолоб - 28 кг</h3>
                         <p class="fishes__list--item--text">Київщина, озеро Ульяники, 2021 рік</p>
+                        <a class="fishes__list--item--link link" href="https://youtu.be/bFaczfaQG_Q" target=_blank>КОРОПИ МОНСТРИ ІСНУЮТЬ!</a>
                     </div>
-                        <img class="fishes__list--item-img" src="./images/tolstolob-2.jpg" alt="">
                     </li>
                     <li class="fishes__list--item">
+                        <picture>
+                            <source srcset="./images/fishes/bass-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                            <source srcset="./images/fishes/bass-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                            <source srcset="./images/fishes/bass-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                            <img class="fishes__list--item-img" src="./images/bass-mobile.jpg" alt="">
+                        </picture>
                     <div class="fishes__list--item-container">
                         <h3 class="fishes__list--item-title">Басс - 1,5 кг</h3>
                         <p class="fishes__list--item--text">Київщина, 2022 рік</p>
+                        <a class="fishes__list--item--link link" href="https://youtu.be/kQaTYZXcLGo" target=_blank>ДУЖЕ РІДКІСНА РИБА В УКРАЇНІ!</a>
                     </div>
-                        <img class="fishes__list--item-img" src="./images/bass-2.jpg" alt="">
                     </li>
                     <li class="fishes__list--item item-reverse">
-                    <div class="fishes__list--item-container">
-                        <h3 class="fishes__list--item-title">Білий Амур - 12,5 кг</h3>
-                        <p class="fishes__list--item--text">Донеччина, Мар’євське водосховище, 2020 рік</p>
-                    </div>
-                        <img class="fishes__list--item-img" src="./images/amur.jpg" alt="">
+                        <picture>
+                            <source srcset="./images/fishes/carp-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                            <source srcset="./images/fishes/carp-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                            <source srcset="./images/fishes/carp-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                            <img class="fishes__list--item-img" src="./images/carp-mobile.jpg"
+                                alt="Катя та її подруга Марія з великим карпом в руках.">
+                        </picture>
+                        <div class="fishes__list--item-container">
+                            <h3 class="fishes__list--item-title">Короп - 20,2 кг</h3>
+                            <p class="fishes__list--item--text">Київщина, озеро Ульяники, 2021 рік</p>
+                            <a class="fishes__list--item--link link" href="https://youtu.be/bFaczfaQG_Q" target=_blank>КОРОПИ МОНСТРИ ІСНУЮТЬ!</a>
+                        </div>
                     </li>
                     <li class="fishes__list--item">
+                        <picture>
+                            <source srcset="./images/fishes/perch-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                            <source srcset="./images/fishes/perch-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                            <source srcset="./images/fishes/perch-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                            <img class="fishes__list--item-img" src="./images/perch-mobile.jpg" alt="">
+                        </picture>
                     <div class="fishes__list--item-container">
                         <h3 class="fishes__list--item-title">Окунь - 1 кг</h3>
                         <p class="fishes__list--item--text">Херсонщина, дельта Дніпра, 2021 рік</p>
+                        <a class="fishes__list--item--link link" href="https://youtu.be/D3rLyRgxPhE" target=_blank>БАЧИЛИ КОЛИСЬ ТАКИХ ОКУНІВ?</a>
                     </div>
-                        <img class="fishes__list--item-img" src="./images/perch-2.jpg" alt="">
                     </li>
-                </ul> -->
+                    <li class="fishes__list--item">
+                        <picture>
+                            <source srcset="./images/fishes/karas-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                            <source srcset="./images/fishes/karas-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                            <source srcset="./images/fishes/karas-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                            <img class="fishes__list--item-img" src="./images/karas-mobile.jpg" alt="">
+                        </picture>
+                        <div class="fishes__list--item-container">
+                            <h3 class="fishes__list--item-title">Карась - 2,3 кг</h3>
+                            <p class="fishes__list--item--text">Київщина, озеро Вовкове, 2020 рік</p>
+                            <a class="fishes__list--item--link link" href="https://youtu.be/a_OjYHvK1qo" target=_blank>ДИКІ КАРАСІ МОНСТРИ!</a>
+                        </div>
+                    </li>
+                    <li class="fishes__list--item">
+                        <picture>
+                            <source srcset="./images/fishes/zander-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                            <source srcset="./images/fishes/zander-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                            <source srcset="./images/fishes/zander-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                            <img class="fishes__list--item-img" src="./images/zander-mobile.jpg" alt="">
+                        </picture>
+                        <div class="fishes__list--item-container">
+                            <h3 class="fishes__list--item-title">Судак - 2 кг</h3>
+                            <p class="fishes__list--item--text">Київщина, 2020 рік</p>
+                            <a class="fishes__list--item--link link" href="https://youtu.be/20Kc8WRoeXs" target=_blank> ВЕЛИКІ СУДАКИ НА ДЖИГ!</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Family-->
+        <section class="family section">
+            <div class="container">
+                <h2 class="family__title title ">Моя сімʼя</h2>
+                <p class="family__text">
+                Вся моя родина є риболови. Мама, тато, сестра, дідусь, хрещений та чоловік, а також майже всі мої друзі! Саме це захоплення дає нам змогу бути ближче один з одним.
+                Ми дуже полюбляємо рибалку, часто це великі сімейні подорожі, дружні веселощі, свята та дні народження, 
+                а найголовніше - це багато спогадів з найріднішими людьми, які залишаються на все життя та згадуються в колі близьких людей майже щоразу! 
+                Разом ми об’їздили всю нашу рідну Україну, та встигли порибалити в деяких інших країнах.
+                <span class="falimy__text--foto">На фотографіях ничже можна ознайомитися з кожною близькою мені людиною.</span>
+                </p>
+                <ul class="family__list list">
+                    <li class="family__list--item">
+                      <div class="overlay__container">
+                        <picture>
+                            <source srcset="./images/family/husband-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                            <source srcset="./images/family/husband-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                            <source srcset="./images/family/husband-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                            <img class="family__list--item-img" src="./images/family/husband-mobile.jpg" alt="">
+                        </picture>
+                        <div class="overlay">
+                            <p class="overlay__text">Мій чоловік ...</p>
+                        </div>
+                      </div>
+                        </li>
+                    <li class="family__list--item">
+                        <div class="overlay__container">
+                            <picture>
+                                <source srcset="./images/family/father-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                                <source srcset="./images/family/father-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                                <source srcset="./images/family/father-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                                <img class="family__list--item-img" src="./images/family/father-mobile.jpg" alt="">
+                            </picture>
+                            <div class="overlay">
+                                <p class="overlay__text">Мій тато ...</p>
+                            </div>
+                        </div>
+                        </li>
+                    <li class="family__list--item">
+                        <div class="overlay__container">
+                            <picture>
+                                <source srcset="./images/family/sister-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                                <source srcset="./images/family/sister-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                                <source srcset="./images/family/sister-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                                <img class="family__list--item-img" src="./images/family/sister-mobile.jpg" alt="">
+                            </picture>
+                            <div class="overlay">
+                                <p class="overlay__text">Моя сестра ...</p>
+                            </div>
+                        </div>
+                        </li>
+                    <li class="family__list--item">
+                        <div class="overlay__container">
+                            <picture>
+                                <source srcset="./images/family/granddad-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                                <source srcset="./images/family/granddad-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                                <source srcset="./images/family/granddad-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                                <img class="family__list--item-img" src="./images/family/granddad-mobile.jpg" alt="">
+                            </picture>
+                            <div class="overlay">
+                                <p class="overlay__text">Мій дідусь ...</p>
+                            </div>
+                        </div>
+                        </li>
+                    <li class="family__list--item">
+                        <div class="overlay__container">
+                            <picture>
+                                <source srcset="./images/family/mother-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                                <source srcset="./images/family/mother-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                                <source srcset="./images/family/mother-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                                <img class="family__list--item-img" src="./images/family/mother-mobile.jpg" alt="">
+                            </picture>
+                            <div class="overlay">
+                                <p class="overlay__text">Моя мати ...</p>
+                            </div>
+                        </div>
+                        </li>
+                    <li class="family__list--item">
+                        <div class="overlay__container">
+                            <picture>
+                                <source srcset="./images/family/godfather-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
+                                <source srcset="./images/family/godfather-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
+                                <source srcset="./images/family/godfather-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
+                                <img class="family__list--item-img" src="./images/family/godfather-mobile.jpg" alt="">
+                            </picture>
+                            <div class="overlay">
+                                <p class="overlay__text">Мій хрещений ...</p>
+                            </div>
+                        </div>
+                        </li>
+                </ul>
             </div>
         </section>
     </main>
