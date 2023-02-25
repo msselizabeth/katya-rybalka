@@ -197,7 +197,7 @@ header {
 
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .hero {
-    background-image: url("../images/hero-mobile.jpg");
+    background-image: url("../images/hero-mobile.JPG");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 500px 400px;
