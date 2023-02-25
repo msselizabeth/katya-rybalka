@@ -197,7 +197,7 @@ header {
 
 @media screen and (max-width: 320px) {
   .hero {
-    background-image: url("../images/hero-mobile.JPG");
+    background-image: url("../images/hero-mobile-2.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 340px 300px;
@@ -216,7 +216,7 @@ header {
 }
 @media screen and (min-width: 321px) and (max-width: 767px) {
   .hero {
-    background-image: url("../images/hero-mobile.JPG");
+    background-image: url("../images/hero-mobile-2.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 500px 400px;
@@ -253,7 +253,7 @@ header {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    background-image: url("../images/HERO.JPG");
+    background-image: url("../images/HERO-2.jpg");
     background-size: 1000px 550px;
     max-width: 1000px;
     max-height: 450px;
@@ -302,7 +302,7 @@ header {
     height: 200px;
   }
   .hero {
-    background-image: url("../images/HERO.JPG");
+    background-image: url("../images/HERO-2.jpg");
     background-size: 1450px 750px;
     max-width: 1450px;
     max-height: 700px;
