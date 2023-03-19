@@ -10,7 +10,7 @@
 
     <title>КАТЯ РИБАЛКА</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./scss/index.css">
+    <link rel="stylesheet" href="./css/index.min.css">
 </head>
 <body>
     <!--Header-->
@@ -41,8 +41,20 @@
     <main>
         <!--Hero-->
         <section class="hero">
+            <div class="slider">
+           <div class="slider-line">
+              <img  class="slider-img" src="./images/IMG_6763.JPG" alt="">
+              <img  class="slider-img" src="./images/IMG_8590.JPG" alt="">
+              <img  class="slider-img" src="./images/IMG_9057.JPG" alt="">
+           </div>
+        </div>
+        <button class="slider-prev btn">Prev</button>
+         <button class="slider-next btn">Next</button>
+   </div>
+            <!-- <img src="./images/IMG_8590.JPG" alt=""> -->
             <div class="hero-box container">
                 <h1 class="hero-title visually-hidden">Катя Рибалка</h1>
+                
                <div class="links-box">
                 <ul class="social-list list">
                     <li class="social-list--item">
@@ -76,8 +88,9 @@
             </div>
             <!-- <img class="hero-img" src="./images/HERO.JPG" alt=""> -->
         </section>
+
         <!--About me-->
-        <section class="about section" id="about">
+        <!-- <section class="about section" id="about">
             <div class="container">
                 <h2 class="about__title title">Про мене</h2>
                     <ul class="about__list list">
@@ -125,9 +138,9 @@
                     </ul>
             </div>
             
-        </section>
+        </section> -->
         <!--Fishes-->
-        <section class="fishes section">
+        <!-- <section class="fishes section">
             <div class="container">
                 <h2 class="fishes__title title">Трофеї</h2>
                 <ul class="fishes__list list">
@@ -238,9 +251,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!--Family-->
-        <section class="family section">
+        <!-- <section class="family section">
             <div class="container">
                 <h2 class="family__title title ">Моя сімʼя</h2>
                 <p class="family__text">
@@ -331,10 +344,11 @@
                         </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
     <!--Footer-->
     <footer></footer>
     
+    <script src="./slider.js"></script>
 </body>
 </html>

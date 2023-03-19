@@ -1,0 +1,43 @@
+.slider{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    
+    width: 1550px;
+    height: 880px;
+    
+    overflow: hidden;
+}
+
+
+
+.slider-line { 
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+    display: flex;
+
+    width: 4650px;
+    height: 880px;
+    background-color: aqua;
+}
+
+.slider-img {
+
+    width: 1550px;
+    height: 880px;
+    object-fit: cover;
+}
+
+.btn { 
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    
+    width: 80px;
+    height: 50px;
+}
+.slider-next {
+    left: 1470px;
+}
