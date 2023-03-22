@@ -38,7 +38,7 @@
     background-color: transparent;
     
     width: 45px;
-    height: 45 px;
+    height: 45px;
 }
 
 .slider-icon {
@@ -49,16 +49,23 @@
 }
 
 .slider-prev {
-    left:0;
+    left:4%;
 }
 .slider-next {
-    right: 0;
+    right: 4%;
 }
 
-@media screen and (min-width:1200px) {
+@media (min-width:768px) {
     .btn {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         }
     }
+
+@media (min-width:1200px) {
+            .btn {
+                width: 90px;
+                height: 90px;
+            }
+        }
 

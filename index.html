@@ -16,32 +16,42 @@
     <!--Header-->
     <header class="header">
        <div class="header-box container">
-        <a class="logo" href="#">
+        <a class="logo" href="#home">
             <svg class="logo-icon">
                 <use href="./images/icons/icons.svg#icon-logo">
                 </use>
             </svg>
         </a>
-          <!-- <ul class="header-list list">
+        <button class="open-mob-menu mob-menu-btn" type="button">
+            <svg class="open-btn-icon mob-menu-icon"><use href="./images/icons/icons.svg#icon-mob-menu"></use></svg>
+        </button>
+        <div class="mobile-menu">
+            <ul class="header-list list">
             <li class="header-list__item item">
              <a class="header-list__link link" href="#about">Про мене</a>
             </li>
             <li class="header-list__item item">
-             <a class="header-list__link link" href="#">Мої трофеї</a>
+             <a class="header-list__link link" href="#fishes">Мої трофеї</a>
             </li>
             <li class="header-list__item item">
-             <a class="header-list__link link" href="#">Моя сімʼя</a>
+             <a class="header-list__link link" href="#family">Моя сімʼя</a>
             </li>
             <li class="header-list__item item">
-             <a class="header-list__link link" href="#">Підписатися</a>
+             <a class="header-list__link link" href="#follow">Підписатися</a>
             </li>
-          </ul> -->
+          </ul>
+          <button class="close-mob-menu mob-menu-btn" type="button">
+            <svg class="close-btn-icon mob-menu-icon"><use href="./images/icons/icons.svg#icon-chevrons-up"></use></svg>
+          </button>
+        </div>
+       
+          
       </div>
     </header>
     <!--Main content-->
     <main>
         <!--Hero-->
-        <section class="hero">
+        <section class="hero" id="home">
            
             <div class="slider">
            <div class="slider-line">
@@ -56,10 +66,10 @@
         </div>
        <div class="container btn-box">
          <button class="slider-prev btn"><svg class="slider-icon">
-                                <use href="./images/icons/icons.svg#icon-thin-prev"></use>
+                                <use href="./images/icons/icons.svg#icon-arrow-left-circle"></use>
                             </svg></button>
          <button class="slider-next btn"><svg class="slider-icon">
-                                <use href="./images/icons/icons.svg#icon-thin-next"></use>
+                                <use href="./images/icons/icons.svg#icon-arrow-right-circle"></use>
                             </svg></button>
        </div>
    </div>
@@ -158,7 +168,7 @@
             
         </section> 
         <!--Fishes-->
-        <section class="fishes section">
+        <section class="fishes section" id="fishes">
             <div class="container">
                 <h2 class="fishes__title title">Трофеї</h2>
                 <ul class="fishes__list list">
@@ -271,7 +281,7 @@
             </div>
         </section> 
         <!--Family-->
-        <section class="family section">
+        <section class="family section" id="family">
             <div class="container">
                 <h2 class="family__title title ">Моя сімʼя</h2>
                 <p class="family__text">
@@ -379,10 +389,10 @@
          
     </main>
     <!--Footer-->
-    <footer class="section footer">
+    <footer class="section footer" id="follow">
        
         <div class="container footer-box">
-         <a class="logo__footer" href="#">
+         <a class="logo__footer" href="#home">
             <svg class="logo__footer-icon" >
                 <use href="./images/icons/icons.svg#icon-logo">
                 </use>
@@ -425,8 +435,16 @@
          </div>
         </div>
     </footer>
+    <div class="scroll-btn-up">
+    <a href="#home" class="scroll-btn shown">
+        <svg class="scroll-btn__svg" width="25" height="25">
+            <use href="./images/icons/icons.svg#icon-chevrons-up"></use>
+        </svg>
+    </a>
+    </div>
     
-    <script src="./slider.js"></script>
-    <script src="./menu.js"></script>
+    <script src="./slider.js" type="module"></script>
+    <script src="./menu.js" type="module"></script>
+    <script src="./scroll.js" type="module"></script>
 </body>
 </html>
