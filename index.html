@@ -121,6 +121,14 @@
         <section class="about section" id="about">
             <div class="container">
                 <h2 class="about__title title">Про мене</h2>
+                <div class="backdrop is-hidden">
+                    <div class="modal">
+                        <img class="modal-img" src="" alt="">
+                        <button  class="modal-img-close-btn" type="button">
+                            <svg class="modal-img-close-btn-icon"><use href="./images/icons/icons.svg#icon-close-circle"></use></svg>
+                        </button>
+                    </div>
+                </div>
                     <ul class="about__list list">
                         <li class="about__item item">
                         <p class="about__text">Катя Рибалка - це призвище чи псевдонім?
@@ -134,7 +142,7 @@
                             Навіть ті, хто жодного разу не тримав вудку в руках стали рибалками.
                             Переконайтесь самі - <a class="about__text--link link" href="https://youtube.com/@katyarybalka">Мій канал YouTube</a></span>
                         </p></li> 
-                        <li class="about__item item">
+                        <li class="about__item item about__item--open-img-icon">
                             <picture>
                                 <source srcset="./images/aboutme/about-me-foto-1-desktop.jpg"
                                 type="image/jpeg" media="(min-width:1200px)" />
@@ -142,26 +150,36 @@
                                 type="image/jpeg" media="(min-width:768px)" />
                                 <source srcset="./images/aboutme/about-me-foto-1-mobile.jpg"
                                 type="image/jpeg" media="(max-width:767px)" />
-                            <img class="about__item--img" src="./images/aboutme/about-me-foto-1-mobile.jpg" 
-                            alt="Фото Каті з великим товстолобом"/></picture>
+                             <img class="about__item--img js-img" src="./images/aboutme/about-me-foto-1-desktop.jpg" 
+                            alt="Фото Каті з великим товстолобом"/>
+                            </picture>
+                            <button class="about__item--img-btn">
+                               <svg class="about__item--img-btn-icon"><use href="./images/icons/icons.svg#icon-plus-circle"></use></svg>
+                            </button>
                             </li>
-                        <li class="about__item item">
+                        <li class="about__item item about__item--open-img-icon">
                             <picture>
                             <source srcset="./images/aboutme/about-me-foto-2-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                             <source srcset="./images/aboutme/about-me-foto-2-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                             <source srcset="./images/aboutme/about-me-foto-2-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                            <img class="about__item--img" src="./images/about-me-foto-3-2.jpg" 
-                                 alt="Фото Каті з трофейним коропом"/>
+                                <img class="about__item--img js-img" src="./images/aboutme/about-me-foto-2-desktop.jpg" 
+                                 alt="Фото Каті з трофейним коропом"/> 
                             </picture>
+                             <button class="about__item--img-btn"> 
+                                <svg class="about__item--img-btn-icon"><use href="./images/icons/icons.svg#icon-plus-circle"></use></svg>
+                            </button>
                         </li>
-                        <li class="about__item item">
+                        <li class="about__item item about__item--open-img-icon">
                             <picture>
                             <source srcset="./images/aboutme/about-me-foto-3-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                             <source srcset="./images/aboutme/about-me-foto-3-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                             <source srcset="./images/aboutme/about-me-foto-3-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                            <img class="about__item--img" src="./images/about-me-foto-4-2.jpg"
+                            <img class="about__item--img js-img" src="./images/aboutme/about-me-foto-3-desktop.jpg"
                                  alt="Фото Каті лежачи із багатьма рибами на короповомі маті"/>
                             </picture>
+                            <button class="about__item--img-btn" type="button">
+                               <svg class="about__item--img-btn-icon"><use href="./images/icons/icons.svg#icon-plus-circle"></use></svg>
+                            </button>
                         </li>
                     </ul>
             </div>
@@ -177,7 +195,7 @@
                             <source srcset="./images/fishes/pike-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                             <source srcset="./images/fishes/pike-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                             <source srcset="./images/fishes/pike-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                            <img class="fishes__list--item-img" src="./images/pike-2.jpg" alt="Катя із щукою в 13 кілограм 400 грам">
+                            <img class="fishes__list--item-img" src="./images/fishes/pike-desktop.jpg" alt="Катя із щукою в 13 кілограм 400 грам">
                         </picture>
                         <div class="fishes__list--item-container">
                             <h3 class="fishes__list--item-title">Щука - 13,4 кг</h3>
@@ -190,7 +208,7 @@
                             <source srcset="./images/fishes/amur-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                             <source srcset="./images/fishes/amur-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                             <source srcset="./images/fishes/amur-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                            <img class="fishes__list--item-img" src="./images/amur-mobile.jpg" alt="Фото Каті з великим амуром вагою дванадцать с половиною кілограм">
+                            <img class="fishes__list--item-img " src="./images/fishes/amur-desktop.jpg" alt="Фото Каті з великим амуром вагою дванадцать с половиною кілограм">
                         </picture>
                         <div class="fishes__list--item-container">
                             <h3 class="fishes__list--item-title">Білий Амур - 12,5 кг</h3>
@@ -203,7 +221,7 @@
                             <source srcset="./images/fishes/tolstolob-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                             <source srcset="./images/fishes/tolstolob-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                             <source srcset="./images/fishes/tolstolob-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                            <img class="fishes__list--item-img" src="./images/tolstolob-mobile.jpg" alt="">
+                            <img class="fishes__list--item-img " src="./images/fishes/tolstolob-desktop.jpg" alt="">
                         </picture>
                     <div class="fishes__list--item-container">
                         <h3 class="fishes__list--item-title">Товстолоб - 28 кг</h3>
@@ -216,7 +234,7 @@
                             <source srcset="./images/fishes/bass-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                             <source srcset="./images/fishes/bass-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                             <source srcset="./images/fishes/bass-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                            <img class="fishes__list--item-img" src="./images/bass-mobile.jpg" alt="">
+                            <img class="fishes__list--item-img " src="./images/fishes/bass-desktop.jpg" alt="">
                         </picture>
                     <div class="fishes__list--item-container">
                         <h3 class="fishes__list--item-title">Басс - 1,5 кг</h3>
@@ -229,7 +247,7 @@
                             <source srcset="./images/fishes/carp-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                             <source srcset="./images/fishes/carp-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                             <source srcset="./images/fishes/carp-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                            <img class="fishes__list--item-img" src="./images/carp-mobile.jpg"
+                            <img class="fishes__list--item-img" src="./images/fishes/carp-desktop.jpg"
                                 alt="Катя та її подруга Марія з великим карпом в руках.">
                         </picture>
                         <div class="fishes__list--item-container">
@@ -243,7 +261,7 @@
                             <source srcset="./images/fishes/perch-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                             <source srcset="./images/fishes/perch-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                             <source srcset="./images/fishes/perch-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                            <img class="fishes__list--item-img" src="./images/perch-mobile.jpg" alt="">
+                            <img class="fishes__list--item-img " src="./images/fishes/perch-desktop.jpg" alt="">
                         </picture>
                     <div class="fishes__list--item-container">
                         <h3 class="fishes__list--item-title">Окунь - 1 кг</h3>
@@ -256,7 +274,7 @@
                             <source srcset="./images/fishes/karas-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                             <source srcset="./images/fishes/karas-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                             <source srcset="./images/fishes/karas-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                            <img class="fishes__list--item-img" src="./images/karas-mobile.jpg" alt="">
+                            <img class="fishes__list--item-img " src="./images/fishes/karas-desktop.jpg" alt="">
                         </picture>
                         <div class="fishes__list--item-container">
                             <h3 class="fishes__list--item-title">Карась - 2,3 кг</h3>
@@ -269,7 +287,7 @@
                             <source srcset="./images/fishes/zander-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                             <source srcset="./images/fishes/zander-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                             <source srcset="./images/fishes/zander-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                            <img class="fishes__list--item-img" src="./images/zander-mobile.jpg" alt="">
+                            <img class="fishes__list--item-img" src="./images/fishes/zander-desktop.jpg" alt="">
                         </picture>
                         <div class="fishes__list--item-container">
                             <h3 class="fishes__list--item-title">Судак - 2 кг</h3>
@@ -298,7 +316,7 @@
                             <source srcset="./images/family/husband-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                             <source srcset="./images/family/husband-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                             <source srcset="./images/family/husband-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                            <img class="family__list--item-img" src="./images/family/husband-mobile.jpg" alt="">
+                            <img class="family__list--item-img" src="./images/family/husband-desktop.jpg" alt="">
                         </picture>
                         <div class="overlay">
                             <p class="overlay__text">Мій чоловік - Олександр. Так визначилась доля, що ми познайомились саме на риболовлі.
@@ -314,7 +332,7 @@
                                 <source srcset="./images/family/father-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                                 <source srcset="./images/family/father-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                                 <source srcset="./images/family/father-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                                <img class="family__list--item-img" src="./images/family/father-mobile.jpg" alt="">
+                                <img class="family__list--item-img" src="./images/family/father-desktop.jpg" alt="">
                             </picture>
                             <div class="overlay">
                                 <p class="overlay__text">Мій тато - Михайло Миколайович. Саме тато долучив мене до риболовлі коли мені було 4 роки. З тих пір ми разом рибалимо і подорожуємо. 
@@ -329,7 +347,7 @@
                                 <source srcset="./images/family/sister-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                                 <source srcset="./images/family/sister-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                                 <source srcset="./images/family/sister-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                                <img class="family__list--item-img" src="./images/family/sister-mobile.jpg" alt="">
+                                <img class="family__list--item-img" src="./images/family/sister-desktop.jpg" alt="">
                             </picture>
                             <div class="overlay">
                                 <p class="overlay__text">Моя сестра - Єлизавета Михайлівна. В неї схожа історія життя з риболовлею, звісно тато навчав цій справі. Крім того що Ліза розділяє наші сімейні інтереси в рибальській справі, вона ще дуже і дуже смачно готує, причому з дитинства! Я би сказала, що у неї хист до кулінарії! І до «комп’ютерних справ», бо саме Ліза створила для мене цей сайт! Дякую ☺️
@@ -343,7 +361,7 @@
                                 <source srcset="./images/family/granddad-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                                 <source srcset="./images/family/granddad-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                                 <source srcset="./images/family/granddad-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                                <img class="family__list--item-img" src="./images/family/granddad-mobile.jpg" alt="">
+                                <img class="family__list--item-img" src="./images/family/granddad-desktop.jpg" alt="">
                             </picture>
                             <div class="overlay">
                                 <p class="overlay__text">Мій дідусь - Микола Олександрович. Найстарший рибалка нашої родини! Колись він навчив тата рибалити, а тато мене. 
@@ -358,7 +376,7 @@
                                 <source srcset="./images/family/mother-desktop.jpg" type="image/jpeg" media="(min-width:1200px)" />
                                 <source srcset="./images/family/mother-tablet.jpg" type="image/jpeg" media="(min-width:768px)" />
                                 <source srcset="./images/family/mother-mobile.jpg" type="image/jpeg" media="(max-width:767px)" />
-                                <img class="family__list--item-img" src="./images/family/mother-mobile.jpg" alt="">
+                                <img class="family__list--item-img" src="./images/family/mother-desktop.jpg" alt="">
                             </picture>
                             <div class="overlay">
                                 <p class="overlay__text">Мама - Оксана Володимирівна. Колись так само як і я піддалась чарам риболовлі, тільки від свого чоловіка. Мама дуже любить ловити щуку і готувати з неї страви. 
@@ -446,5 +464,6 @@
     <script src="./slider.js" type="module"></script>
     <script src="./menu.js" type="module"></script>
     <script src="./scroll.js" type="module"></script>
+    <script src="./modal-img.js" type="module"></script>
 </body>
 </html>
